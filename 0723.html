@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* text-decoration: none; */
+        }
+
+        .header {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            /* background-color: #fff; */
+        }
+
+        .header .wrap {
+            /* width: 100%; */
+            display: flex;
+            justify-content: center;
+            margin: 20px 300px 0 0;
+            /* background-color: #000; */
+        }
+
+        .header .wrap h2 {}
+
+        .header .wrap .txt {
+            padding: 10px;
+
+        }
+
+        .header .wrap .txt a {
+            text-decoration: none;
+            color: #000;
+            /* font-size: .75rem; */
+
+        }
+
+        /* .header .wrap button {
+            text-decoration: none;
+            background-color: #000;
+
+        } */
+
+        .header .wrap .a2 {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 5px;
+            height: 20px;
+        }
+
+        .header .right {
+            /* justify-self: end; */
+
+            /* background-color: #fa0; */
+            margin: 10px 0;
+            /* margin: 0 0 0 500px; */
+            /* padding: 0 0 0 500px; */
+
+        }
+
+        .header .right .a3 {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .header .right .a4 {
+            color: #000;
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        /* 導覽列 */
+        nav {
+            display: flex;
+        }
+
+        nav .left {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 250px;
+            /* background-color: #fa0; */
+            width: 800px;
+
+        }
+
+        nav .left li {
+            padding: 1 0px 10px;
+            margin: auto;
+        }
+
+        nav .left li a {
+            color: #4e4e4e;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        nav .left li:hover {
+            background-color: #fa0;
+        }
+
+        /* 導覽列右側 */
+        nav .search {}
+
+        nav .search ul {
+            display: flex;
+        }
+
+        nav .search ul li {
+            padding: 20px 10px;
+        }
+
+        nav .search ul li form  {
+            border-radius: 50px;
+            padding: 5px 0;
+        }
+
+        nav .search ul li .a5 {
+            color: #4e4e4e;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        nav .search ul li .a6 {
+            color: #fff;
+            background-color: #000;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        nav .search ul li .a7 {
+            font-size: 20px;
+            color: #4e4e4e;
+            text-decoration: none;
+        }
+
+        /* path */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap">
+            <h2>M</h2>
+            <div class="txt">
+                <a href="">
+                    Free access to 5 Frontend Masters courses! Sign up to advaqnce your JavaScript skills. No card
+                    needed.
+                </a>
+            </div>
+            <a href="" class="a2">
+                Start Learning Now
+            </a>
+        </div>
+        <div class="right">
+            <a href="" class="a3">
+                Mozilla ads
+            </a>
+            <a href="" class="a4">
+                Don't want to see ads?
+            </a>
+        </div>
+    </div>
+
+    <nav>
+
+        <ul class="left">
+            <li>
+                <a href="">
+                    mdn web docs
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    References
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Guides
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    plus
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    play
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    AI Help
+                </a>
+            </li>
+        </ul>
+        <!-- 導覽列右側 -->
+        <div class="search">
+            <ul>
+                <li>
+                    <a href="" class="a7">
+                        Theme
+                    </a>
+                </li>
+                <li>
+                    <form action="">
+                        <input type="text" value="搜尋">
+                        <input type="submit" >
+                    </form>
+                </li>
+                <li>
+                    <a href="" class="a5">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="a6">
+                        Get MDN Plus
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- path -->
+    <style>
+        .path {
+            width: 100%;
+            background-color: #0111;
+            border: 1px solid #4e4e4e;
+            border-left: transparent;
+            border-right: transparent;
+        }
+
+        .path .wrap {
+            display: flex;
+            /* justify-content: flex-end; */
+            /* background-color: #ff0; */
+            width: 72%;
+            margin: auto;
+            /* flex-direction: column; */
+
+        }
+
+        .path .wrap ul {
+            display: flex;
+            text-align: center;
+            /* background-color: #fa9; */
+            width: 90%;
+
+        }
+
+        .path .wrap ul li {
+            padding: 10px;
+        }
+
+        .path .wrap ul li a {
+            color: #4e4e4e;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        .path .wrap button {
+            text-align: center;
+            border: transparent;
+            /* background-color: #fa0; */
+
+
+
+
+        }
+
+        .path .wrap button:hover {
+            background-color: #aeaeae;
+        }
+
+        .path .wrap button h2 {
+            color: #4e4e4e;
+        }
+
+        .path li+li::before {
+            content: '>';
+            /* position: absolute; */
+            left: 0;
+        }
+    </style>
+    <div class="path">
+        <div class="wrap">
+            <ul>
+                <li>
+                    <a href="">
+                        學習該如何開發 Web
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        JS-動態的客戶端指令
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        JS-初探
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        JS-是什麼?
+                    </a>
+                </li>
+            </ul>
+            <button>
+                <h2>正體中文(繁體)</h2>
+            </button>
+        </div>
+    </div>
+    <style>
+        .alert {
+            background-color: rgb(0 133 242 / 10%);
+            width: 75%;
+            /* margin: auto; */
+            margin: 30px 280px;
+            height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .alert h2 {
+            font-size: 20px;
+            text-align: center;
+            /* margin: auto; */
+            padding: 15px;
+            color: #0069c2;
+            /* background-color: #000; */
+        }
+    </style>
+
+
+    <div class="alert">
+        <h2>
+            This page was translated from English by the community. Learn more and join the MDN Web Docs community.
+        </h2>
+    </div>
+    <main>
+        <div class="wrap">
+            <!-- 左側欄位 -->
+            <style>
+                main {}
+
+                main .wrap {
+                    display: flex;
+                }
+
+                main .wrap .left {
+                    /* flex-direction: column; */
+                    width: 15%;
+                    /* background-color: #000; */
+                    /* margin: auto; */
+                    margin: 0 0 0 280px;
+                    border-right: 5px solid #000;
+                }
+
+                main .wrap .left .item {}
+
+                main .wrap .left .item ul {
+
+                    /* background-color: #fa0; */
+                }
+
+                main .wrap .left .item ul li {
+                    margin: 0px 10px 20px 0;
+                }
+
+                main .wrap .left .item ul li h2 {
+                    color: #333;
+                    font-size: 20px;
+
+                }
+
+                main .wrap .left .item ul li h3 {
+                    color: #4e4e4e;
+                    font-size: 18px;
+                }
+            </style>
+            <div class="left">
+                <div class="item">
+                    <ul>
+                        <li>
+                            <h2>全新手請從這開始!</h2>
+                        </li>
+                        <li>
+                            <h3>Web 入門</h3>
+                        </li>
+                        <li>
+                            <h2>HTML - 架構 Web</h2>
+                        </li>
+                        <li>
+                            <h3>HTML 介紹</h3>
+                        </li>
+                        <li>
+                            <h3>多媒體與嵌入</h3>
+                        </li>
+                        <li>
+                            <h3>HTML表格</h3>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 中間內容 -->
+            <style>
+                main .wrap .center {
+                    /* background-color: #fa0; */
+                    padding: 0 30px;
+                    /* background-color: #fa0; */
+                    width: 40%;
+
+                }
+
+                main .wrap .center .wrap {}
+
+                main .wrap .center .wrap .item {
+                    /* background-color: #fa0; */
+                    width: 100%;
+                }
+
+                main .wrap .center .wrap .item h1 {
+                    font-size: 40px;
+                }
+
+                /* buttom */
+                main .wrap .center .wrap .item .black {
+                    /* background-color: #000; */
+                    margin: 30px 0 0 0;
+                    display: flex;
+
+
+                }
+
+                main .wrap .center .wrap .item .black .b1 {
+                    background-color: #fff;
+                    border: 1px solid #4e4e4e;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin: 0 530px 0 0;
+
+                }
+
+                main .wrap .center .wrap .item .black .b2 {
+                    background-color: #fff;
+                    border: 1px solid #4e4e4e;
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+
+                main .wrap .center .wrap .item .black a {
+                    color: #0069c2;
+                }
+
+                main .wrap .center .wrap .item .black .b1:hover {
+                    background-color: #eee;
+                }
+
+                main .wrap .center .wrap .item .black .b2:hover {
+                    background-color: #eee;
+                }
+
+                /* txt */
+                main .wrap .center .wrap .item .txt {
+                    margin: 20px 0;
+                }
+
+                main .wrap .center .wrap .item .txt p {
+                    font-size: 16px;
+                }
+
+                /* list */
+                main .wrap .center .wrap .item .list {
+                    width: 100%;
+                    /* background-color: #fa0; */
+                }
+
+                main .wrap .center .wrap .item .list ul {
+                    display: flex;
+                    width: 100%;
+                    /* background-color: #fa8; */
+                    border-top: 1px solid;
+                    border-bottom: 1px solid #000;
+                    border-left: 1px solid;
+                    border-right: 1px solid #000;
+                }
+
+                main .wrap .center .wrap .item .list ul li {
+                    border-left: 1px solid;
+                    padding: 5px 5px;
+                }
+
+                main .wrap .center .wrap .item .list ul li h2 {
+                    /* background-color: #fa0; */
+                    font-size: 20px;
+
+                }
+
+                main .wrap .center .wrap .item .list ul li h3 {
+                    width: 100%;
+                    font-size: 20px;
+                    /* background-color: #000; */
+
+                }
+            </style>
+            <div class="center">
+                <div class="wrap">
+                    <div class="item">
+                        <h1>
+                            JavaScript 是什麼?
+                        </h1>
+                        <!-- buttom -->
+                        <div class="black">
+                            <button class="b1">
+                                <a href="">
+                                    Overrive:First steps
+                                </a>
+                            </button>
+                            <button class="b2">
+                                <a href="">次頁</a>
+                            </button>
+                        </div>
+                        <div class="txt">
+                            <p>
+                                歡迎來到 MDN 的 JavaScript 初學者課程！我們將在這個章節綜觀 JavaScript ，回答一些像是「它什麼？」和「可以使用它作什麼？」之的問題，並確保你了解
+                                JavaScript 的特性。
+                            </p>
+                        </div>
+                        <!-- list -->
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <h2>
+                                        先備條件：
+                                    </h2>
+                                </li>
+                                <li>
+                                    <h3>
+                                        基本的電腦知識，基本了解 HTML 和 CSS 技術。
+                                    </h3>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h2>
+                                        學習目標：
+                                    </h2>
+                                </li>
+                                <li>
+                                    <h3>
+                                        了解 JavaScript 的本質、功能、以及它如何構成網站的一部分
+                                    </h3>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- 右側大綱、廣告 -->
+            <style>
+                .right {}
+
+                .right .wrap {}
+
+                .right .wrap .item {}
+
+                .right .wrap .item h2 {
+                    color: #4e4e4e;
+                    /* background-color: #fa0; */
+                    /* padding: 0 0 20px 0; */
+                }
+
+                .right .wrap .item ul {
+                    margin: 20px 0 0 0;
+                }
+
+                .right .wrap .item ul li {
+                    padding: 10px 0 10px 20px;
+                    border-left: 1px solid #000;
+
+
+
+                }
+
+                .right .wrap .item ul li a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #4e4e4e;
+                }
+
+                .right .wrap .item ul li:hover {
+                    background-color: #93870030;
+                }
+
+                .right .wrap .item ul li:hover a {
+                    color: #0069c2;
+                }
+
+                .right .wrap .item .pic {
+                    background-color: #eee;
+                    width: 30%;
+                    margin: 20px 0;
+                    border: 1px solid #4e4e4e;
+                }
+
+                .right .wrap .item .pic img {
+                    width: 130px;
+                    height: 100px;
+                    padding: 15px;
+                }
+
+                .right .wrap .item .pic .txt {
+                    padding: 20px;
+                }
+
+                .right .wrap .item .pic .txt a {
+                    text-decoration: none;
+                    color: #4e4e4e;
+                }
+
+                .right .wrap .item .pic .bot a {
+                    color: #4e4e4e;
+                    text-align: right;
+                    /* background-color: #000; */
+                    /* background-color: #000; */
+                    width: 100%;
+                    padding: 0 0 0 80px;
+
+                }
+            </style>
+            <div class="right">
+                <div class="wrap">
+                    <div class="item">
+                        <h2>In this article</h2>
+                        <ul>
+                            <li>
+                                <a href="">高層次的定義</a>
+                            </li>
+                            <li>
+                                <a href="">它究竟可以做什麼呢?</a>
+                            </li>
+                            <li>
+                                <a href="">JavaScript 在你的頁面做了什麼?</a>
+                            </li>
+                            <li>
+                                <a href="">如何在網頁中增添 JavaScript?</a>
+                            </li>
+                            <li>
+                                <a href="">註解</a>
+                            </li>
+                            <li>
+                                <a href="">總結</a>
+                            </li>
+                        </ul>
+                        <div class="pic">
+                            <img src="https://developer.mozilla.org/pimg/aHR0cHM6Ly9zLnprY2RuLm5ldC9BZHZlcnRpc2Vycy85ZWIwMjQxMjFhNjI0NWJiYWFjYjdkODgzYzk0Y2M1Yy5wbmc%3D.xocL9gLkiwzTP19Dyc0JoZ3wKdA5uYruMiwuEonSUC4%3D"
+                                alt="">
+                            <div class="txt">
+                                <a href="">
+                                    Master React 18 and build scalable apps with a complete React learning path.
+                                </a>
+                            </div>
+                            <div class="bot">
+                                <a href="">
+                                    Mozilla ads
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
